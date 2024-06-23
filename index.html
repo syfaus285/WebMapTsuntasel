@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Peta Tingkat Kerawanan Tsunami CDOB Kabupaten Tasikmalaya Selatan</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="./resources/ol.css">
+    <link rel="stylesheet" href="resources/fontawesome-all.min.css">
+    <link rel="stylesheet" type="text/css" href="resources/horsey.min.css">
+    <link rel="stylesheet" type="text/css" href="resources/ol3-search-layer.min.css">
+    <link href="resources/ol-geocoder.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
+    <link rel="stylesheet" href="./resources/qgis2web.css">
+    <style>
+        html,
+        body {
+            background-color: #ffffff;
+        }
+
+        .ol-control>* {
+            background-color: #f8f8f8 !important;
+            color: #444444 !important;
+            border-radius: 0px;
+        }
+
+        .ol-attribution a,
+        .gcd-gl-input::placeholder,
+        .search-layer-input-search::placeholder {
+            color: #444444 !important;
+        }
+
+        .search-layer-input-search {
+            background-color: #f8f8f8 !important;
+        }
+
+        .ol-control>*:focus,
+        .ol-control>*:hover {
+            background-color: rgba(248, 248, 248, 0.7) !important;
+        }
+
+        .ol-control {
+            background-color: rgba(255, 255, 255, .4) !important;
+            padding: 2px !important;
+        }
+    </style>
+
+    <style>
+        html,
+        body,
+        #map {
+            width: 100%;
+            height: 96%;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <!-- Favicon -->
+    <link rel="icon" href="images/iconn.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="header"
+        style="background: linear-gradient(45deg,#2e5498,#5A9AB7); color: aliceblue; display: flex; align-items: center; justify-content: space-between;">
+        <img src="images/SAFETY TASEL.png" alt="Logo" style="height: 50px; margin-right: 0px; padding-left: 50px;">
+        <p class="H2"
+            style="font-family: Poppins; font-size: 20px; line-height: 20px; text-align: center; flex-grow: 1; position: relative;">
+            <b>PETA TINGKAT KERENTANAN TSUNAMI <br>CDOB KABUPATEN TASIKMALAYA SELATAN</b>
+        </p>
+        <nav style="margin-left: 10px; padding-right: 50px;">
+            <ul style="list-style-type: none; padding: 0; margin: 0; display: flex; gap: 15px;">
+                <li><a href="#home" style="color: aliceblue; text-decoration: none; font-family: poppins;">Beranda</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div id="map">
+        <div id="popup" class="ol-popup">
+            <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+            <div id="popup-content"></div>
+        </div>
+    </div>
+    <script src="resources/qgis2web_expressions.js"></script>
+    <script src="resources/polyfills.js"></script>
+    <script src="./resources/functions.js"></script>
+    <script src="./resources/ol.js"></script>
+    <script src="http://cdn.polyfill.io/v2/polyfill.min.js?features=Element.prototype.classList,URL"></script>
+    <script src="resources/horsey.min.js"></script>
+    <script src="resources/ol3-search-layer.js"></script>
+    <script src="./resources/ol-layerswitcher.js"></script>
+    <script src="resources/ol-geocoder.js"></script>
+    <script src="layers/JarakdariSungai_3.js"></script>
+    <script src="layers/JarakdariGarisPantai_4.js"></script>
+    <script src="layers/Elevasi_5.js"></script>
+    <script src="layers/KemiringanLereng_6.js"></script>
+    <script src="layers/Kerawanantotal_7.js"></script>
+    <script src="layers/TingkatKerawananTsunami_8.js"></script>
+    <script src="layers/BatasAdministrasiKecamatan_9.js"></script>
+    <script src="styles/JarakdariSungai_3_style.js"></script>
+    <script src="styles/JarakdariGarisPantai_4_style.js"></script>
+    <script src="styles/Elevasi_5_style.js"></script>
+    <script src="styles/KemiringanLereng_6_style.js"></script>
+    <script src="styles/Kerawanantotal_7_style.js"></script>
+    <script src="styles/TingkatKerawananTsunami_8_style.js"></script>
+    <script src="styles/BatasAdministrasiKecamatan_9_style.js"></script>
+    <script src="./layers/layers.js" type="text/javascript"></script>
+    <script src="./resources/Autolinker.min.js"></script>
+    <script src="./resources/qgis2web.js"></script>
+</body>
+
+</html>
